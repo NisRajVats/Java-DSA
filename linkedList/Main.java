@@ -10,12 +10,12 @@ public class Main {
         System.out.println("Initial list:");
         myList.print();
 
-        System.out.println("\nAfter removing last:");
-        myList.removeLast();
+        System.out.println("\nReversed linkedList:");
+        myList.reverse();
         myList.print();
 
-        System.out.println("\nAfter removing first:");
-        myList.removeFirst();
-        myList.print();
+        
     }
+
+    
 }

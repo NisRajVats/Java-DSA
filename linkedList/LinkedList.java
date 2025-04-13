@@ -81,6 +81,7 @@ public class LinkedList {
 
         Node temp = head;
         head = head.next;
+        temp.next = null;
         length--;
 
         if (length == 0) {
@@ -137,11 +138,30 @@ public class LinkedList {
         Node prevNode = getNode(index - 1);
         Node removedNode = prevNode.next;
         prevNode.next = removedNode.next;
+        removedNode.next = null;
         length--;
 
         return removedNode;
     }
     public int getLength() {
         return length;
+    }   
+
+
+    public void reverse() {
+        Node temp = head;
+        head = tail;
+        tail =temp;
+
+        Node after = temp.next ;
+        Node before = null;
+        for(int i=0; i<length ; i++)
+        {
+           after = temp.next;
+           temp.next=before;
+           before = temp;
+           temp=after; 
+        }
+        tail.next = null;
     }   
 }
