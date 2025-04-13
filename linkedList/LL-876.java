@@ -47,6 +47,14 @@
 
 
 
+// slow moves one step at a time.
+
+// fast moves two steps at a time.
+
+// When fast reaches the end, slow is in the middle.
+
+
+
 public class LinkedList {
 
     private Node head;
