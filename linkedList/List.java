@@ -5,7 +5,7 @@
 // Works even when removing the first node.
 
 
-public class LinkedList {
+public class List {
 
     private Node head;
     private Node tail;
@@ -19,7 +19,7 @@ public class LinkedList {
         }
     }
 
-    public LinkedList(int value) {
+    public List(int value) {
         Node newNode = new Node(value);
         head = newNode;
         tail = newNode;
